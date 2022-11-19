@@ -26,11 +26,6 @@ const AppRouter: FC<AppRouterProps> = observer(({ jobs }) => {
       <Route key={"pathmain"} path="/" element={<JobsList jobs={jobs} />} />
       <Route key={"pathno"} path="*" element={<JobsList jobs={jobs} />} />
 
-      {/* <Route
-        key={"jobdetails"}
-        path="/job-details"
-        element={<JobDetails item={StoreJobs.selectedJob} />}
-      /> */}
       {path === "/job-details" && StoreJobs.selectedJob.id && (
         <Route
           key={"jobdetails"}

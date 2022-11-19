@@ -16,12 +16,12 @@ const App = observer(() => {
       let data = await fetchJobs();
       // console.log(data);
 
-      //fake data STARS
+      //mock-data STARS
       data.forEach((i: IJobItem) => {
         i.stars = randomIntFromInterval(1, 5);
       });
 
-      //fake data +extra data jobs for pagination
+      //mock-data +extra data jobs for pagination
       let repiteN = 52;
       for (let index = 0; index < repiteN; index++) {
         data.push(data[randomIntFromInterval(0, 19)]);

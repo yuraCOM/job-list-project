@@ -25,7 +25,6 @@ const JobDetails: FC<JobDetailsProps> = ({ item }) => {
 
   function backHandler(): void {
     navigate("/");
-    console.log("backHandler");
   }
 
   return !item.id ? (

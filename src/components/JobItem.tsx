@@ -49,7 +49,7 @@ const JobItem: FC<JobItemProps> = ({ item }) => {
   function getJobDetails(job: IJobItem) {
     navigate("/job-details");
     StoreJobs.setSelectedJob(job);
-    console.log(job);
+    // console.log(job);
   }
 
   return (
